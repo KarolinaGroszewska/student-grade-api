@@ -25,7 +25,7 @@ Built for GHW: API Week (November 2025). Introductory API build focusing on docu
 {
   "id": "string",
   "name": "string",
-  "grades": [{ "subject": "string", "score": number }]
+  "grades": [{ "subject": "string", "score": 0-100 }]
 }
 ```
 - PUT requests overwrite the full grades array; to add a single class, modify the route accordingly.
