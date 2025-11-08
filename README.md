@@ -26,33 +26,33 @@ Built for GHW: API Week (November 2025). Introductory API build focusing on docu
 {
   "id": "string",
   "name": "string",
-  "grades": [{ "subject": "string", "score": 0-100 }]
+  "grades": [{ "subject": "string", "score": 0-105 }]
 }
 ```
 - PUT requests append grades if grades are included.
 - PATCH requests are available to add grades without modifying the rest of the student data.
-- Always provide grades as an array of objects with subject (string) and score (number 0–100).
+- Always provide grades as an array of objects with subject (string) and score (number 0–105).
 
 ## Curl Commands
 
-#### Get all students
+### Get all students
 You can find test data in `/data/students.json`
 
 ```
 curl -X GET http://localhost:3001/students
 ```
-#### Get a single student
+### Get a single student
 
 ```
 curl -X GET http://localhost:3001/students/[id]
 ```
-#### Add a new student
+### Add a new student
 ```
 curl -X POST http://localhost:3001/students \
   -H "Content-Type: application/json" \
   - d '{"id": [id], "name": [name], "grades:" [{"subject": [subjectName], "score": [score]}]}'
 ```
-#### Update a student
+### Update a student
 ```
 curl -X PUT http://localhost:3001/students/[id] \
   -H "Content-Type: application/json" \
@@ -69,15 +69,15 @@ curl -X PATCH http://localhost:3001/students/[id] \
   -H "Content-Type: application/json" \
   d '{"grades:" [{"subject": [subjectName], "score": [score]}]}'
 ```
-#### Delete a student
+### Delete a student
 ```
 curl -X DELETE http://localhost:3001/students/[id]
 ```
-#### Get a student's average grade
+### Get a student's average grade
 ```
 curl -X GET http://localhost:3001/students/[id]/average
 ```
-#### Get a student's subjects
+### Get a student's subjects
 ```
 curl -X GET http://localhost:3001/students/[id]/subjects
 ```
