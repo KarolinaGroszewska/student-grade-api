@@ -1,0 +1,482 @@
+[
+  {
+    "id": "S2028001",
+    "name": "Alice Johnson",
+    "grades": [
+      {
+        "subject": "MATH-101: Algebra I",
+        "score": 92
+      },
+      {
+        "subject": "SCI-201: Biology",
+        "score": 85
+      },
+      {
+        "subject": "ENG-202: American Literature",
+        "score": 88
+      },
+      {
+        "subject": "HIST-210: U.S. History",
+        "score": 91
+      },
+      {
+        "subject": "ART-105: Intro to Drawing",
+        "score": 95
+      },
+      {
+        "subject": "CS-301: Web Development",
+        "score": 98
+      }
+    ]
+  },
+  {
+    "id": "S2029002",
+    "name": "Benjamin Lee",
+    "grades": [
+      {
+        "subject": "MATH-102: Geometry",
+        "score": 78
+      },
+      {
+        "subject": "SCI-201: Biology",
+        "score": 83
+      },
+      {
+        "subject": "ENG-101: Composition I",
+        "score": 75
+      },
+      {
+        "subject": "ECON-201: Microeconomics",
+        "score": 80
+      },
+      {
+        "subject": "CS-101: Intro to Programming",
+        "score": 88
+      },
+      {
+        "subject": "PE-110: Fitness & Conditioning",
+        "score": 90
+      }
+    ]
+  },
+  {
+    "id": "S2028003",
+    "name": "Chloe Martinez",
+    "grades": [
+      {
+        "subject": "MATH-201: Algebra II",
+        "score": 87
+      },
+      {
+        "subject": "SCI-202: Chemistry",
+        "score": 90
+      },
+      {
+        "subject": "ENG-202: American Literature",
+        "score": 93
+      },
+      {
+        "subject": "HIST-205: World History",
+        "score": 82
+      },
+      {
+        "subject": "SPAN-101: Intro to Spanish",
+        "score": 94
+      },
+      {
+        "subject": "ART-205: Graphic Design",
+        "score": 89
+      }
+    ]
+  },
+  {
+    "id": "S2026004",
+    "name": "Daniel Kim",
+    "grades": [
+      {
+        "subject": "MATH-301: Pre-Calculus",
+        "score": 95
+      },
+      {
+        "subject": "CS-201: Data Structures",
+        "score": 99
+      },
+      {
+        "subject": "SCI-301: Physics I",
+        "score": 93
+      },
+      {
+        "subject": "SCI-302: Chemistry II",
+        "score": 91
+      },
+      {
+        "subject": "PE-110: Fitness & Conditioning",
+        "score": 87
+      },
+      {
+        "subject": "HIST-210: U.S. History",
+        "score": 85
+      }
+    ]
+  },
+  {
+    "id": "S2028005",
+    "name": "Ella Thompson",
+    "grades": [
+      {
+        "subject": "ENG-301: Creative Writing",
+        "score": 96
+      },
+      {
+        "subject": "HIST-205: World History",
+        "score": 89
+      },
+      {
+        "subject": "ART-105: Intro to Drawing",
+        "score": 92
+      },
+      {
+        "subject": "PSY-101: Intro to Psychology",
+        "score": 94
+      },
+      {
+        "subject": "SPAN-201: Spanish II",
+        "score": 88
+      },
+      {
+        "subject": "MATH-101: Algebra I",
+        "score": 85
+      }
+    ]
+  },
+  {
+    "id": "S2028006",
+    "name": "Felix Anderson",
+    "grades": [
+      {
+        "subject": "MATH-102: Geometry",
+        "score": 72
+      },
+      {
+        "subject": "SCI-201: Biology",
+        "score": 76
+      },
+      {
+        "subject": "ENG-101: Composition I",
+        "score": 70
+      },
+      {
+        "subject": "ECON-201: Microeconomics",
+        "score": 81
+      },
+      {
+        "subject": "PE-120: Team Sports",
+        "score": 85
+      },
+      {
+        "subject": "HIST-210: U.S. History",
+        "score": 68
+      }
+    ]
+  },
+  {
+    "id": "S2027007",
+    "name": "Grace Chen",
+    "grades": [
+      {
+        "subject": "CS-301: Web Development",
+        "score": 97
+      },
+      {
+        "subject": "MATH-301: Pre-Calculus",
+        "score": 90
+      },
+      {
+        "subject": "SCI-301: Physics I",
+        "score": 93
+      },
+      {
+        "subject": "SCI-302: Chemistry II",
+        "score": 88
+      },
+      {
+        "subject": "ENG-202: American Literature",
+        "score": 84
+      },
+      {
+        "subject": "PE-120: Team Sports",
+        "score": 86
+      }
+    ]
+  },
+  {
+    "id": "S2029008",
+    "name": "Hector Ramirez",
+    "grades": [
+      {
+        "subject": "HIST-205: World History",
+        "score": 77
+      },
+      {
+        "subject": "ENG-101: Composition I",
+        "score": 81
+      },
+      {
+        "subject": "ECON-202: Macroeconomics",
+        "score": 79
+      },
+      {
+        "subject": "MATH-201: Algebra II",
+        "score": 82
+      },
+      {
+        "subject": "SPAN-101: Intro to Spanish",
+        "score": 85
+      },
+      {
+        "subject": "PE-110: Fitness & Conditioning",
+        "score": 88
+      }
+    ]
+  },
+  {
+    "id": "S2028009",
+    "name": "Isabella White",
+    "grades": [
+      {
+        "subject": "ENG-301: Creative Writing",
+        "score": 94
+      },
+      {
+        "subject": "ART-205: Graphic Design",
+        "score": 99
+      },
+      {
+        "subject": "PSY-101: Intro to Psychology",
+        "score": 92
+      },
+      {
+        "subject": "HIST-210: U.S. History",
+        "score": 88
+      },
+      {
+        "subject": "SPAN-201: Spanish II",
+        "score": 90
+      },
+      {
+        "subject": "ECON-201: Microeconomics",
+        "score": 85
+      }
+    ]
+  },
+  {
+    "id": "S2027010",
+    "name": "Jack Nguyen",
+    "grades": [
+      {
+        "subject": "CS-201: Data Structures",
+        "score": 93
+      },
+      {
+        "subject": "MATH-301: Pre-Calculus",
+        "score": 88
+      },
+      {
+        "subject": "SCI-301: Physics I",
+        "score": 91
+      },
+      {
+        "subject": "SCI-302: Chemistry II",
+        "score": 90
+      },
+      {
+        "subject": "PE-110: Fitness & Conditioning",
+        "score": 84
+      },
+      {
+        "subject": "HIST-210: U.S. History",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "S2028011",
+    "name": "Katherine O'Brien",
+    "grades": [
+      {
+        "subject": "ENG-301: Creative Writing",
+        "score": 95
+      },
+      {
+        "subject": "PSY-201: Developmental Psychology",
+        "score": 98
+      },
+      {
+        "subject": "ART-205: Graphic Design",
+        "score": 91
+      },
+      {
+        "subject": "SPAN-201: Spanish II",
+        "score": 93
+      },
+      {
+        "subject": "HIST-205: World History",
+        "score": 89
+      },
+      {
+        "subject": "ECON-202: Macroeconomics",
+        "score": 87
+      }
+    ]
+  },
+  {
+    "id": "S2028012",
+    "name": "Leo Patel",
+    "grades": [
+      {
+        "subject": "MATH-201: Algebra II",
+        "score": 83
+      },
+      {
+        "subject": "SCI-202: Chemistry",
+        "score": 86
+      },
+      {
+        "subject": "ECON-202: Macroeconomics",
+        "score": 84
+      },
+      {
+        "subject": "PE-120: Team Sports",
+        "score": 89
+      },
+      {
+        "subject": "CS-101: Intro to Programming",
+        "score": 92
+      },
+      {
+        "subject": "HIST-210: U.S. History",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "S2029013",
+    "name": "Mia Torres",
+    "grades": [
+      {
+        "subject": "ENG-202: American Literature",
+        "score": 91
+      },
+      {
+        "subject": "ART-105: Intro to Drawing",
+        "score": 97
+      },
+      {
+        "subject": "SPAN-101: Intro to Spanish",
+        "score": 89
+      },
+      {
+        "subject": "PSY-101: Intro to Psychology",
+        "score": 93
+      },
+      {
+        "subject": "HIST-205: World History",
+        "score": 85
+      },
+      {
+        "subject": "PE-120: Team Sports",
+        "score": 90
+      }
+    ]
+  },
+  {
+    "id": "S2027014",
+    "name": "Noah Brown",
+    "grades": [
+      {
+        "subject": "MATH-301: Pre-Calculus",
+        "score": 85
+      },
+      {
+        "subject": "SCI-202: Chemistry",
+        "score": 89
+      },
+      {
+        "subject": "SCI-301: Physics I",
+        "score": 88
+      },
+      {
+        "subject": "CS-201: Data Structures",
+        "score": 94
+      },
+      {
+        "subject": "SCI-302: Chemistry II",
+        "score": 91
+      },
+      {
+        "subject": "ENG-202: American Literature",
+        "score": 87
+      }
+    ]
+  },
+  {
+    "id": "S2028015",
+    "name": "Olivia Davis",
+    "grades": [
+      {
+        "subject": "ENG-202: American Literature",
+        "score": 90
+      },
+      {
+        "subject": "HIST-205: World History",
+        "score": 85
+      },
+      {
+        "subject": "ART-205: Graphic Design",
+        "score": 88
+      },
+      {
+        "subject": "PSY-101: Intro to Psychology",
+        "score": 92
+      },
+      {
+        "subject": "SPAN-101: Intro to Spanish",
+        "score": 87
+      },
+      {
+        "subject": "MATH-201: Algebra II",
+        "score": 83
+      }
+    ]
+  },
+  {
+    "id": "S2029016",
+    "name": "Ryan Parker",
+    "grades": [
+      {
+        "subject": "MATH-101: Algebra I",
+        "score": 89
+      },
+      {
+        "subject": "SCI-201: Biology",
+        "score": 93
+      },
+      {
+        "subject": "ENG-101: Composition I",
+        "score": 84
+      },
+      {
+        "subject": "PE-110: Fitness & Conditioning",
+        "score": 95
+      },
+      {
+        "subject": "CS-101: Intro to Programming",
+        "score": 91
+      },
+      {
+        "subject": "MATH-202: Algebra II",
+        "score": 88
+      }
+    ]
+  }
+]
