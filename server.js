@@ -15,6 +15,13 @@ app.use(express.json());
 
 // --- Helper Functions ---
 
+// Validate student ID
+function isValidStudentId(id) {
+  const regex = /^S2029\d{4}$/;
+  return regex.test(id);
+}
+
+
 // Load students from JSON
 export function loadStudents() {
   if (fs.existsSync(dataPath)) {

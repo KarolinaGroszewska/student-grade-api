@@ -6,20 +6,21 @@ Built for GHW: API Week (November 2025). Introductory API build focusing on docu
 
 ---
 
-## Endpoints
+
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/students` | GET | Retrieve a list of all students. |
-| `/students/:id` | GET | Retrieve a single student by their ID. |
-| `/students` | POST | Add a new student. Requires JSON body with `id`, `name`, and `grades`. |
-| `/students/:id` | PUT | Update a student's name and/or grades. Overwrites the `grades` array. |
+| `/students/:id` | GET | Retrieve a single student by ID. |
+| `/students` | POST | Add a new student. Requires JSON body with `id` (format `S2025XXXX`), `name`, and `grades`. |
+| `/students/:id` | PUT | Update a student’s name and/or grades. Appends new grades if provided. |
+| `/students/:id/grades` | PATCH | Append one or more grades to a student. Requires JSON body with `grades` array. |
 | `/students/:id` | DELETE | Delete a student by ID. |
 | `/students/:id/average` | GET | Get the average score of all the student’s grades. |
 | `/students/:id/subjects` | GET | Get a list of all subjects the student is enrolled in. |
-
+---
 ### Notes
 - All data is persisted in `students.json`.
-- Student IDs must be unique.
+- Student IDs must follow the format S2029XXXX.
 - JSON format for students:
 ```json
 {
@@ -28,7 +29,9 @@ Built for GHW: API Week (November 2025). Introductory API build focusing on docu
   "grades": [{ "subject": "string", "score": 0-100 }]
 }
 ```
-- PUT requests overwrite the full grades array; to add a single class, modify the route accordingly.
+- PUT requests append grades if grades are included.
+- PATCH requests are available to add grades without modifying the rest of the student data.
+- Always provide grades as an array of objects with subject (string) and score (number 0–100).
 
 ## Curl Commands
 
@@ -54,6 +57,17 @@ curl -X POST http://localhost:3001/students \
 curl -X PUT http://localhost:3001/students/[id] \
   -H "Content-Type: application/json" \
   -d '{"name": [name], "grades:" [{"subject": [subjectName], "score": [score]}]}'
+```
+### Append grades
+```
+curl -X PUT http://localhost:3001/students/[id] \
+  -H "Content-Type: application/json" \
+  -d '{"id": [id], "name": [name], "grades:" [{"subject": [subjectName], "score": [score]}]}'
+```
+```
+curl -X PATCH http://localhost:3001/students/[id] \ 
+  -H "Content-Type: application/json" \
+  d '{"grades:" [{"subject": [subjectName], "score": [score]}]}'
 ```
 #### Delete a student
 ```
