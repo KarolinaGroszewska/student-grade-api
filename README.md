@@ -1,12 +1,12 @@
 # Student Grades API Documentation
-**Base URL (Production):** `https://student-grade-api-bvmg.onrender.com`
-**Base URL (Local):** `https://localhost:3001`
+- **Base URL (Production):** `https://student-grade-api-bvmg.onrender.com`
 
-
-**Description:**
-Built for **GHW: API Week (November 2025)**.  
-This project demonstrates how to design, document, and deploy a high-quality REST API using **Node.js**, **Express**, and **MongoDB Atlas**.  
-The API provides access to student data — including subjects, grades, and calculated averages — and now persists data in a MongoDB database rather than a local file.
+- **Base URL (Local):** `https://localhost:3001`
+---
+## **Description:**
+- Built for **GHW: API Week (November 2025)**.  
+- This project demonstrates how to design, document, and deploy a high-quality REST API using **Node.js**, **Express**, and **MongoDB Atlas**.  
+- The API provides access to student data — including subjects, grades, and calculated averages — and now persists data in a MongoDB database rather than a local file.
 ---
 
 | Endpoint | Method | Description |
