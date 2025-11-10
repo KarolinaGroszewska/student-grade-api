@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Validate student ID
 function isValidStudentId(id) {
-  const regex = /^S2029\d{4}$/;
+  const regex = /^S2025\d{4}$/;
   return regex.test(id);
 }
 

@@ -58,12 +58,14 @@ curl -X PUT http://localhost:3001/students/[id] \
   -H "Content-Type: application/json" \
   -d '{"name": [name], "grades:" [{"subject": [subjectName], "score": [score]}]}'
 ```
-### Append grades
+### Append grades (PUT)
 ```
 curl -X PUT http://localhost:3001/students/[id] \
   -H "Content-Type: application/json" \
   -d '{"id": [id], "name": [name], "grades:" [{"subject": [subjectName], "score": [score]}]}'
 ```
+### Append grades (PUT)
+
 ```
 curl -X PATCH http://localhost:3001/students/[id] \ 
   -H "Content-Type: application/json" \

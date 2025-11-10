@@ -29,7 +29,7 @@ router.post("/", (req, res) => {
   const { id, name, grades } = req.body;
 
   if (!isValidStudentId(id)) {
-    return res.status(400).json({ error: "Invalid student ID format. Use S2029XXXX" });
+    return res.status(400).json({ error: "Invalid student ID format. Use S2025XXXX" });
   }
   if (!id || !name || !grades) {
     return res.status(400).json({ error: "Missing required fields" });
@@ -67,6 +67,7 @@ router.put("/:id", (req, res) => {
   res.json(student);
 });
 
+// PATCH /students/:id/grades – Add grades to a student
 router.patch("/:id/grades", (req, res) => {
     const students = loadStudents();
     const student = students.find((s) => s.id === req.params.id);
