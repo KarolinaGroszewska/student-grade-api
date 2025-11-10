@@ -23,7 +23,7 @@ mongoose
 // --- Helper Functions ---
 
 // Validate student ID
-function isValidStudentId(id) {
+export function isValidStudentId(id) {
   const regex = /^S2025\d{4}$/;
   return regex.test(id);
 }

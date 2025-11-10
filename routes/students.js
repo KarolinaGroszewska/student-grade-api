@@ -1,5 +1,5 @@
 import express from "express";
-import Student from "../models/Student.js";
+import Student from "../models/students.js";
 import {isValidStudentId } from "../server.js";
 
 const router = express.Router();
