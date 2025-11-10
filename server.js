@@ -1,17 +1,24 @@
 import express from "express";
 import cors from "cors";
-import fs from "fs";
-import path from "path";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 import studentRoutes from "./routes/students.js"; // make sure this path is correct
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-const dataPath = path.join(__dirname, "data", "students.json");
-
+dotenv.config();
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
+
+// --- MongoDB Connection ---
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 // --- Helper Functions ---
 
@@ -19,29 +26,6 @@ app.use(express.json());
 function isValidStudentId(id) {
   const regex = /^S2025\d{4}$/;
   return regex.test(id);
-}
-
-
-// Load students from JSON
-export function loadStudents() {
-  if (fs.existsSync(dataPath)) {
-    const data = fs.readFileSync(dataPath, "utf-8");
-    try {
-      return JSON.parse(data);
-    } catch (err) {
-      console.error("Error parsing students data:", err);
-      return [];
-    }
-  } else {
-    console.log("No students data file found. Starting with an empty array.");
-    return [];
-  }
-}
-
-// Save students to JSON
-export function saveStudents(students) {
-  fs.writeFileSync(dataPath, JSON.stringify(students, null, 2), "utf-8");
-  console.log("Students saved to file successfully.");
 }
 
 // --- Routes ---
